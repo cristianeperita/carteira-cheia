@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  :root{--bege:#FBF1E4;--laranja:#F26B21;--preto:#141414;--rosa:#F9D6CF;--vermelho:#C7302B}
+  :root{--bege:#F7F3EE;--laranja:#D9A86C;--preto:#171413;--rosa:#F1E4E6;--vermelho:#6E1F2B}
   *{box-sizing:border-box}
   body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--preto);background:var(--bege);line-height:1.5}
   .wrap{max-width:760px;margin:0 auto;padding:0 22px}
@@ -22,15 +22,20 @@
   h1{font-size:clamp(38px,7.5vw,64px);line-height:1.02;font-weight:900;letter-spacing:-1.5px;margin:0 0 20px}
   h2{font-size:clamp(28px,5vw,42px);line-height:1.08;font-weight:900;letter-spacing:-1px;margin:0 0 18px}
   p{font-size:18px;margin:0 0 16px}
-  .hero{background:var(--laranja);padding:52px 0 0;overflow:hidden}
+  .hero{background:var(--preto);color:#fff;padding:52px 0 0;overflow:hidden;border-bottom:6px solid var(--vermelho)}
+  .hero h1{color:#fff}
   .hero-grid{display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap}
   .hero-text{flex:1 1 440px;min-width:0;padding-bottom:56px}
   .hero-photo{flex:0 1 440px;margin:0 auto;display:flex;justify-content:center}
   .hero-photo img{display:block;width:100%;max-width:440px;height:auto}
   .hero-photo .ph-old{width:230px;height:230px;border-radius:999px;background:var(--bege);border:6px solid var(--preto);display:flex;align-items:center;justify-content:center;font-weight:700;color:#6b4a2f;overflow:hidden}
   .hero-photo img{width:100%;height:100%;object-fit:cover}
-  .hero p{color:var(--preto);font-weight:500}
-  .hero .kicker{color:#fff}
+  .hero p{color:#E9E4DF;font-weight:400}
+  .hero .kicker{background:transparent;color:var(--laranja);padding:0;letter-spacing:3px}
+  .hero .chip{background:#2A2523;color:#fff;border:1px solid #4a403b}
+  .hero .chip.rosa{background:var(--vermelho);color:#fff;border-color:var(--vermelho)}
+  .hero .btn{background:var(--laranja);color:var(--preto)}
+  .hero .btn:hover{background:#e6b97f}
   .chips{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 30px}
   .chip{background:var(--preto);color:#fff;font-size:14px;font-weight:700;padding:9px 16px;border-radius:999px}
   .chip.rosa{background:var(--rosa);color:var(--preto)}
@@ -41,9 +46,9 @@
   .btn.laranja:hover{background:#ff8440}
   ol,ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-direction:column;gap:16px}
   li{display:flex;gap:16px;align-items:flex-start;font-size:18px;font-weight:500}
-  .dot{flex:none;width:36px;height:36px;border-radius:999px;background:var(--laranja);color:var(--preto);font-size:15px;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .dot{flex:none;width:36px;height:36px;border-radius:999px;background:var(--vermelho);color:#fff;font-size:15px;font-weight:900;display:flex;align-items:center;justify-content:center}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:10px}
-  .card{background:#fff;border:2px solid var(--preto);border-radius:18px;padding:20px;box-shadow:5px 5px 0 var(--laranja)}
+  .card{background:#fff;border:2px solid var(--preto);border-radius:18px;padding:20px;box-shadow:5px 5px 0 var(--vermelho)}
   .card strong{display:block;font-size:17px;margin-bottom:6px}
   .card span{font-size:15px;color:#3a3a3a}
   .bg-rosa{background:var(--rosa)}
